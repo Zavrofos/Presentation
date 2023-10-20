@@ -13,6 +13,6 @@ public class Press : MonoBehaviour
 
     private void OnMouseDown()
     {
-        _animator.SetTrigger("start_run");
+        _animator.SetTrigger("start");
     }
 }
