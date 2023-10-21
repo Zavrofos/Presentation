@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +11,7 @@ public class PressSing : MonoBehaviour
     private Animator _birdAnimator;
     [SerializeField] private Animator _singAnimator;
     [SerializeField] private Button _buttonNextScene;
+    [SerializeField] private TMP_Text _buttonText;
     [SerializeField] private int indexToNextScene;
 
     private void Start()
@@ -51,6 +54,9 @@ public class PressSing : MonoBehaviour
         _singAnimator.SetTrigger("start");
         yield return new WaitForSeconds(1);
         _buttonNextScene.GetComponent<RectTransform>().position = _singAnimator.transform.position;
+        _buttonNextScene.GetComponent<RectTransform>().rotation = _singAnimator.transform.rotation;
+        RectTransform buttonTextRect = _buttonText.GetComponent<RectTransform>();
+        buttonTextRect.rotation = Quaternion.Euler(Vector3.zero);
         _buttonNextScene.gameObject.SetActive(true);
     }
 }

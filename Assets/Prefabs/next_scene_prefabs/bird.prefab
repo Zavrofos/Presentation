@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3072809640315983436}
   - component: {fileID: 3072809640315983439}
   m_Layer: 0
-  m_Name: bird_prefab
+  m_Name: bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1495181553
   m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4034257460408169424, guid: 66eb2554e45e21d438892c0576a0c0d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
