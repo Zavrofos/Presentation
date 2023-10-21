@@ -50,6 +50,7 @@ public class PressSing : MonoBehaviour
     {
         _singAnimator.SetTrigger("start");
         yield return new WaitForSeconds(1);
+        _buttonNextScene.GetComponent<RectTransform>().position = _singAnimator.transform.position;
         _buttonNextScene.gameObject.SetActive(true);
     }
 }
