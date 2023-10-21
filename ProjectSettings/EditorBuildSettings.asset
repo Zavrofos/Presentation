@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/first_scene_day.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/second_scene_night.unity
+    guid: acb52ba34d6152443ba86ec2c2a6d9d8
   m_configObjects: {}
